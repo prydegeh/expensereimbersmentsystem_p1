@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.login {
+	background-color: white;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	object-fit: contain;
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.login__container {
+	width: 300px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	padding: 20px;
+}
+
+.login__container>h1 {
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.login__container>form>h3 {
+	margin-bottom: 5px;
+}
+
+.login__container>form>input {
+	height: 30px;
+	margin-bottom: 10px;
+	background-color: white;
+	width: 98%;
+}
+
+.login__container>p {
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.login__signInButton {
+	background: #c9b5ff;
+	border-radius: 2px;
+	width: 100%;
+	height: 30px;
+	border: 1px solid;
+	margin-top: 10px;
+	border-color: #8400ff #c885ff #a124d3;
+}
+
+.cancelbtn {
+	background: lightgray;
+	border-radius: 2px;
+	width: 100%;
+	height: 30px;
+	border: 1px solid;
+	margin-top: 10px;
+}
+
+</style>
+
+<head>
+<link rel="stylesheet" href="logInPage.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="login.js">
+	
+</script>
+<title>P1</title>
+</head>
+<body class="login">
+	<h1>P1 Reimbursement Tracker</h1>
+	
+	
+	<form id="login-form" method="POST">
+	
+		<div class="login__container">
+			<h3>Email:</h3>
+			<input id="email" type="email" placeholder="Enter your E-mail" required>
+			<h3>Password:</h3>
+			<input id="password" type="password" placeholder="Password" required>
+
+			<button type="submit" class="login__signInButton" value="Login"
+				onclick="validate()">Sign In</button>
+			<label> <input type="checkbox" name="remember">
+				Remember Me!
+			</label>
+
+			<div>
+				<button type="button" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#"> password?</a></span>
+			</div>
+	</form>
+	</div>
+	
+	<script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Reimbursements</title>
+<style type="text/css">
+body {
+	font-family: 'Work Sans', sans-serif;
+	margin: 0;
+}
+
+table {
+	width: 60%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 5px;
+	border: 1px solid lightgray;
+	padding: 20px;
+	background-color: #eee;
+}
+
+
+input {
+	background: #c9b5ff;
+	border-radius: 2px;
+	width: 100%;
+	height: 60px;
+	border: 1px solid;
+	margin-top: 10px;
+	border-color: #8400ff #c885ff #a124d3;
+	
+}
+</style>
+
+</head>
+<body>
+	<h2 align="center">Create New Request</h2>
+	<form action="/addReimbursements" method="post">
+		<table align="center">
+			<tr>
+				<td>Enter Amount :</td>
+				<td><input type="number" name="amount" required="required"
+					placeholder="Enter Amount Here" /></td>
+			</tr>
+			<tr>
+				<td>Enter Description :</td>
+				<td><input type="text" name="memo" required="required"
+					placeholder="Enter Course Category Here" /></td>
+			</tr>
+
+			<td><input type="reset" value="Clear"></td>
+			<td><input type="submit" value="Add Request"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
