@@ -12,3 +12,6 @@ Manager
 A Manager can view all reimbursements past and pending
 A Manager can appove or deny any reimbursement
 Managers can view a 'statistics' page. That includes information like what employee spends the most money, mean expenditure cost etc...
+
+Environment: 
+Java, JavaScript, HTML, CSS, JDBC, PostgreSQL, Javalin, Maven, JUnit4, Log4J
